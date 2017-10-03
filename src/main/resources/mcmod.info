@@ -1,0 +1,16 @@
+[
+{
+  "modid": "rechisel",
+  "name": "ReChisel",
+  "description": "Adds even more fancy blocks for decoration, also crafted using the Chisel.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "https://minecraft.curseforge.com/projects/chisel",
+  "updateUrl": "",
+  "authorList": [ "tterrag", "Drullkus", "minecreatr" ],
+  "credits": "AUTOMATIC_MAIDEN for the original mod,\nasie for porting to 1.7.2,\nand Pokenfenn/Cricket for continuing it in 1.7.",
+  "logoFile": "/banner.jpg",
+  "screenshots": [],
+  "dependencies": []
+}
+]
