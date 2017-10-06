@@ -9,6 +9,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.registries.IForgeRegistry;
 import team.chisel.ReChisel;
+import team.chisel.common.block.Blocks;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 
@@ -18,7 +19,25 @@ import javax.annotation.ParametersAreNonnullByDefault;
 public class RegisterItemEvent {
     @SubscribeEvent
     public static void onRegisterItems(RegistryEvent.Register<Item> event) {
+        ItemRegistryHelper items = new ItemRegistryHelper(event.getRegistry());
 
+        items.registerBlock(Blocks.pumpkin_surprised);
+        items.registerBlock(Blocks.pumpkin_happy);
+        items.registerBlock(Blocks.pumpkin_joy);
+        items.registerBlock(Blocks.pumpkin_mortified);
+        items.registerBlock(Blocks.pumpkin_cringing);
+        items.registerBlock(Blocks.pumpkin_agape);
+        items.registerBlock(Blocks.pumpkin_gasp);
+        items.registerBlock(Blocks.pumpkin_unamused);
+        items.registerBlock(Blocks.pumpkin_sad);
+        items.registerBlock(Blocks.pumpkin_upset);
+        items.registerBlock(Blocks.pumpkin_elated);
+        items.registerBlock(Blocks.pumpkin_depressed);
+        items.registerBlock(Blocks.pumpkin_anticipating);
+        items.registerBlock(Blocks.pumpkin_confused);
+        items.registerBlock(Blocks.pumpkin_screaming);
+        items.registerBlock(Blocks.pumpkin_derp);
+        items.registerBlock(Blocks.pumpkin_sinister);
     }
 
     private static class ItemRegistryHelper {
@@ -34,11 +53,6 @@ public class RegisterItemEvent {
         }
 
         private void registerBlock(Block block) {
-            ItemBlock metaItemBlock = new ItemBlock(block);
-            register(metaItemBlock);
-        }
-
-        private void registerSubItemBlock(Block block) {
             ItemBlock metaItemBlock = new ItemBlock(block);
             register(metaItemBlock);
         }
