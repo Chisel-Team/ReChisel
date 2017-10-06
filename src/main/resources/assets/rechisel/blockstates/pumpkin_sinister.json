@@ -1,0 +1,38 @@
+{
+  "forge_marker":1,
+  "defaults": {
+    "model": "orientable",
+    "textures": {
+      "top": "blocks/pumpkin_top",
+      "side": "blocks/pumpkin_side"
+    }
+  },
+  "variants": {
+    "facing": {
+      "north": {
+    
+      },
+      "south": {
+    
+      },
+      "west": {
+    
+      },
+      "east": {
+    
+      }
+    },
+    "lighted": {
+      "true": {
+        "textures": {
+          "front": "rechisel:blocks/pumpkin/face_16_on"
+        }
+      },
+      "false": {
+        "textures": {
+          "front": "rechisel:blocks/pumpkin/face_16_off"
+        }
+      }
+    }
+  }
+}
